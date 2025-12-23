@@ -1,0 +1,150 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* GLOBAL */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: white;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #27ae60;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #f1f1f1;
+}
+
+/* OPTIONS */
+.options h2 {
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #27ae60;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 15px;
+}
+
+.card a {
+  display: inline-block;
+  background: #27ae60;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+}
+
+/* HOW IT WORKS */
+.how-it-works ol {
+  max-width: 400px;
+  margin: auto;
+  text-align: left;
+}
+
+.how-it-works li {
+  margin-bottom: 10px;
+}
+
+/* WHY US */
+.why-us ul {
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+}
+
+.why-us li {
+  margin-bottom: 10px;
+}
+
+/* FINAL CTA */
+.final-cta {
+  background: #27ae60;
+  color: white;
+}
+
+.final-cta h2 {
+  margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: #aaa;
+  padding: 15px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* DESKTOP IMPROVEMENTS */
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+}
