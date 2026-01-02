@@ -1,101 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fresh Fruit Box | Daily Fresh Fruits</title>
-
-  <!-- SEO Basics -->
-  <meta name="description" content="Fresh fruit boxes delivered daily. Affordable prices, local sourcing, and easy WhatsApp ordering." />
-  <meta name="keywords" content="fresh fruit box, fruit delivery, fruit subscription, daily fruits" />
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Fruit Box | Local, Honest, Fresh Fruit Delivery</title>
+    <meta name="description" content="Affordable fresh fruit boxes delivered daily. Local sourcing, honest pricing, WhatsApp ordering. Not a big impersonal app.">
+    <meta name="keywords" content="fresh fruit box, fruit delivery, fruit subscription, daily fruits, local fruits">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🍎 Fresh Fruit Box</h1>
+            </div>
+            <nav class="nav">
+                <a href="#products">Products</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#why-choose">Why Choose Us</a>
+                <a href="tel:+911234567890" class="phone-link">
+                    <i class="fas fa-phone"></i> Call: +91 12345 67890
+                </a>
+            </nav>
+        </div>
+    </header>
 
-  <!-- HERO SECTION -->
-  <header class="hero">
-    <h1>Fresh Fruit Boxes Delivered Daily</h1>
-    <p>Affordable • Hygienic • Locally Sourced</p>
-    <a class="cta-btn" href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20a%20fruit%20box" target="_blank">
-      Order on WhatsApp
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Fresh Fruit Boxes Delivered Daily</h2>
+                <p class="subtext">Affordable • Hygienic • Locally Sourced</p>
+                <p class="hero-description">Simple, honest fruit delivery with human confirmation. No apps, no confusion.</p>
+                <a href="https://wa.me/911234567890?text=Hi! I'd like to order a Fresh Fruit Box. Can you help me choose?" 
+                   class="cta-button whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Showcase -->
+    <section class="showcase">
+        <div class="container">
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="assets/images/fruit-box.jpg" alt="Fresh Fruit Box Package" loading="lazy">
+                    <p class="image-caption">Our Fresh Fruit Box</p>
+                </div>
+                <div class="image-item">
+                    <img src="assets/images/fresh-fruits.jpg" alt="Close up of fresh fruits" loading="lazy">
+                    <p class="image-caption">Daily Fresh Fruits</p>
+                </div>
+                <div class="image-item">
+                    <img src="assets/images/delivery.jpg" alt="Fruit delivery moment" loading="lazy">
+                    <p class="image-caption">Timely Delivery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2>Choose Your Fruit Box</h2>
+            <p class="section-subtitle">Simple choices, honest pricing</p>
+            
+            <div class="product-cards">
+                <!-- Today's Fruit Box -->
+                <div class="product-card">
+                    <div class="product-badge">Most Popular</div>
+                    <h3>Today's Fruit Box</h3>
+                    <div class="price">₹99</div>
+                    <p class="product-description">Curated selection of today's freshest fruits. Perfect for daily needs.</p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> 4-5 seasonal fruits</li>
+                        <li><i class="fas fa-check"></i> Washed & hygienic</li>
+                        <li><i class="fas fa-check"></i> Ready to eat</li>
+                    </ul>
+                    <a href="https://wa.me/911234567890?text=I want to order Today's Fruit Box (₹99)" 
+                       class="product-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Custom Fruit Box -->
+                <div class="product-card">
+                    <h3>Custom Fruit Box</h3>
+                    <div class="price">₹99</div>
+                    <p class="product-description">Choose from our fresh fruit selection. We'll pack it for you.</p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Choose 3 fruits</li>
+                        <li><i class="fas fa-check"></i> Apple, Banana, Orange</li>
+                        <li><i class="fas fa-check"></i> Seasonal options</li>
+                    </ul>
+                    <a href="https://wa.me/911234567890?text=I want to order Custom Fruit Box (₹99). Can I see today's options?" 
+                       class="product-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Choose Fruits
+                    </a>
+                </div>
+
+                <!-- Subscription Plans -->
+                <div class="product-card highlight">
+                    <div class="product-badge">Save 15%</div>
+                    <h3>Weekly Subscription</h3>
+                    <div class="price">₹600 <span class="period">/week</span></div>
+                    <p class="product-description">Fresh fruits every day for 7 days. Best for families & regulars.</p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> 7 days delivery</li>
+                        <li><i class="fas fa-check"></i> Daily variety</li>
+                        <li><i class="fas fa-check"></i> Priority service</li>
+                    </ul>
+                    <a href="https://wa.me/911234567890?text=I'm interested in Weekly Subscription (₹600/week)" 
+                       class="product-btn highlight-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Subscribe Now
+                    </a>
+                </div>
+
+                <!-- Monthly Subscription -->
+                <div class="product-card highlight">
+                    <div class="product-badge">Save 20%</div>
+                    <h3>Monthly Subscription</h3>
+                    <div class="price">₹2500 <span class="period">/month</span></div>
+                    <p class="product-description">30 days of fresh fruits. Most economical for regular use.</p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> 30 days delivery</li>
+                        <li><i class="fas fa-check"></i> Free delivery</li>
+                        <li><i class="fas fa-check"></i> Customizable</li>
+                    </ul>
+                    <a href="https://wa.me/911234567890?text=I'm interested in Monthly Subscription (₹2500/month)" 
+                       class="product-btn highlight-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Monthly Plan
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <p class="section-subtitle">Simple 4-step process</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Choose a Fruit Box</h3>
+                    <p>Pick from our simple options. No quantity confusion.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Pay via UPI</h3>
+                    <p>Simple UPI payment. We'll share details on WhatsApp.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Order Confirmed on Call</h3>
+                    <p>Human verification call to confirm details & timing.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Fresh Delivery</h3>
+                    <p>Same-day or next-morning delivery of fresh fruits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose" id="why-choose">
+        <div class="container">
+            <h2>Why Choose Fresh Fruit Box</h2>
+            <p class="section-subtitle">Not a big impersonal app</p>
+            
+            <div class="benefits">
+                <div class="benefit">
+                    <div class="benefit-icon">🌱</div>
+                    <h3>Local Sourcing</h3>
+                    <p>Fruits sourced from local markets daily for maximum freshness.</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">💎</div>
+                    <h3>Honest Pricing</h3>
+                    <p>No fake discounts or dark patterns. What you see is what you pay.</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Human Confirmation</h3>
+                    <p>Every order confirmed by a real person on call. No automation errors.</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">🚚</div>
+                    <h3>Same-day Packing</h3>
+                    <p>Fruits packed just before delivery, not stored for days.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready for Fresh Fruits Today?</h2>
+            <p>Join hundreds of local families enjoying fresh, affordable fruits daily.</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/911234567890?text=Hi! I want to order a Fresh Fruit Box. Please help me choose." 
+                   class="cta-button whatsapp-btn large" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Start WhatsApp Order
+                </a>
+                <a href="tel:+911234567890" class="cta-button phone-btn">
+                    <i class="fas fa-phone"></i> Call to Ask Questions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>🍎 Fresh Fruit Box</h3>
+                    <p>Local, honest, fresh — not a big impersonal app.</p>
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fas fa-map-marker-alt"></i> Serving Local Area</p>
+                    <p><i class="fas fa-clock"></i> Orders: 8 AM - 8 PM</p>
+                    <p><i class="fas fa-phone"></i> +91 12345 67890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> Fresh Fruit Box. All rights reserved.</p>
+                <p>Made with ❤️ for fresh fruit lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky WhatsApp Button (Phase 2 Feature) -->
+    <a href="https://wa.me/911234567890?text=Hi! I'd like to order a Fresh Fruit Box." 
+       class="sticky-whatsapp" target="_blank" title="Order on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
     </a>
-  </header>
 
-  <!-- OPTIONS SECTION -->
-  <section class="options">
-    <h2>Choose Your Fruit Box</h2>
-
-    <div class="cards">
-
-      <div class="card">
-        <h3>🍎 Today’s Fruit Box</h3>
-        <p class="price">₹99</p>
-        <p>Fresh seasonal fruits. Fixed box. Perfect for daily needs.</p>
-        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Today’s%20Fruit%20Box" target="_blank">
-          Order via WhatsApp
-        </a>
-      </div>
-
-      <div class="card">
-        <h3>🍌 Custom Fruit Box</h3>
-        <p class="price">₹99</p>
-        <p>Choose fruits from our list. No quantity confusion.</p>
-        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Custom%20Fruit%20Box" target="_blank">
-          Order via WhatsApp
-        </a>
-      </div>
-
-      <div class="card">
-        <h3>📦 Subscription Plans</h3>
-        <p class="price">From ₹600</p>
-        <p>Weekly (₹600 / 7 days)<br>Monthly (₹2500 / 30 days)</p>
-        <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20fruit%20box%20subscription" target="_blank">
-          Subscribe on WhatsApp
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section class="how-it-works">
-    <h2>How It Works</h2>
-    <ol>
-      <li>Choose a fruit box</li>
-      <li>Pay via UPI</li>
-      <li>Order confirmed on call</li>
-      <li>Fresh delivery 🚚</li>
-    </ol>
-  </section>
-
-  <!-- WHY US -->
-  <section class="why-us">
-    <h2>Why Choose Us?</h2>
-    <ul>
-      <li>✔ Fresh fruits sourced locally</li>
-      <li>✔ Packed the same day</li>
-      <li>✔ Honest pricing</li>
-      <li>✔ Human confirmation, no confusion</li>
-    </ul>
-  </section>
-
-  <!-- FINAL CTA -->
-  <section class="final-cta">
-    <h2>Start Your Fresh Habit Today</h2>
-    <a class="cta-btn" href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20a%20fruit%20box" target="_blank">
-      Order Now on WhatsApp
-    </a>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Fresh Fruit Box. All rights reserved.</p>
-  </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
